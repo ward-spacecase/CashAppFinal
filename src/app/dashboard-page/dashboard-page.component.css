@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+html, body, h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif; }
+
+html, body {
+  height: 100%; }
+
+html, body {
+  height: 100%; }
+
+body, html {
+  overflow: hidden; }
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif; }
+
+#dashboardPage #topNav {
+  margin-left: 120px;
+  color: white;
+  height: 60px;
+  width: calc(100% - 120px);
+  background-color: #4BB5C1; }
+  #dashboardPage #topNav h4 {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px; }
+  #dashboardPage #topNav i.fa {
+    display: none;
+    padding: 20px;
+    height: 70px;
+    vertical-align: middle; }
+#dashboardPage #sideNav {
+  top: 0;
+  position: fixed;
+  text-align: center;
+  background-color: #273038;
+  width: 120px;
+  height: 100vh; }
+  #dashboardPage #sideNav .leftTopNavIMG {
+    width: 100%;
+    background-color: #296c83; }
+  #dashboardPage #sideNav #close-button {
+    display: none; }
+  #dashboardPage #sideNav a {
+    text-decoration: none;
+    color: white; }
+    #dashboardPage #sideNav a :hover {
+      background-color: #4BB5C1; }
+    #dashboardPage #sideNav a .nav-item {
+      padding: 25px 0;
+      display: block; }
+    #dashboardPage #sideNav a .nav-item.first {
+      margin-top: -5px; }
+#dashboardPage #mainContent {
+  margin: 0 0 0 120px;
+  width: calc(100% - 120px);
+  display: inline-block; }
+@media screen and (max-width: 850px) {
+  #dashboardPage #sideNav {
+    display: none; }
+  #dashboardPage #sideNav.sidenav-open {
+    cursor: pointer;
+    min-width: 350px;
+    width: 50vw;
+    z-index: 99;
+    display: inline-block;
+    position: fixed;
+    text-align: left; }
+    #dashboardPage #sideNav.sidenav-open .leftTopNavIMG {
+      max-width: 100px; }
+    #dashboardPage #sideNav.sidenav-open #close-button {
+      color: white;
+      width: 100px;
+      height: 100px;
+      display: inline-block; }
+    #dashboardPage #sideNav.sidenav-open a .nav-item {
+      padding-left: 30px; }
+  #dashboardPage #mainContent {
+    text-align: center;
+    margin: 0 auto; }
+  #dashboardPage #topNav {
+    margin-left: 0;
+    width: 100%; }
+    #dashboardPage #topNav i.fa {
+      display: inline-block; } }
+
+/*# sourceMappingURL=dashboard-page.component.css.map */

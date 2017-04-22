@@ -1,0 +1,28 @@
+<div id="dashboardPage">
+  <div id="topNav">
+    <i class="fa fa-bars" aria-hidden="true" id="trigger-navbar" (click)="toggleNav()"></i>
+
+    <h4><strong>Goodmorning, Bob</strong></h4>
+  </div>
+
+  <div id="sideNav" [ngClass]="{'sidenav-open': open}">
+    <img [routerLink]="['defaultDashboardPage']" src="../../assets/cashRoyaleLogo.png" class="leftTopNavIMG">
+    <div id="close-button"><i class="fa fa-arrow-left fa-3x" aria-hidden="true" (click)="toggleNav()"></i></div>
+
+    <a [routerLink]="['defaultDashboardPage']">
+        <span class="nav-item first">Dashboard</span>
+      </a>
+    <a [routerLink]="['checkbookPage']">
+      <span class="nav-item">Checkbook</span>
+      </a>
+    <a [routerLink]="['budgetPage']">
+      <span class="nav-item">Budget</span>
+      </a>
+  </div>
+
+  <div id="mainContent">
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

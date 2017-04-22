@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-dashboard-page',
+  templateUrl: './dashboard-page.component.html',
+  styleUrls: ['./dashboard-page.component.scss']
+})
+export class DashboardPageComponent implements OnInit {
+
+
+  open: boolean;
+
+  constructor() {
+  }
+
+  ngOnInit() {
+
+    this.open = false;
+  }
+
+    toggleNav() {
+      this.open = !this.open;
+    }
+}

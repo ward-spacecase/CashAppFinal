@@ -1,0 +1,145 @@
+@import "../../styles.scss";
+
+#checkBookMainContainer {
+  background-color: $background;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.header {
+  font-family: $largeFont;
+  font-weight: 200;
+  justify-content: space-between;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+  .item {
+    display: inline-flex;
+  }
+  .checkbook {
+    align-items: center;
+    i {
+      font-size: 40px;
+    }
+    .fa-bars {
+      margin-left: 5px;
+    }
+    .checkbookHeader {
+      font-size: $headFontSize;
+      margin-left: 10px;
+    }
+  }
+  .addingCheckbook {
+    margin-right: 10px;
+    i {
+      color: $darkGreen;
+      font-size: 15px;
+    }
+    i:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+.addingCheckbook:hover {
+  cursor: pointer;
+}
+
+#checkbookHeader {
+  width: 400px;
+  margin: 50px auto;
+  border-bottom: 1px solid #ddd;
+  #checkbookHeaderWords {
+    text-align: center;
+  }
+}
+
+#checkbookSubHeaders {
+  display: flex;
+  justify-content: space-around;
+  .subHeader {
+    text-align: center;
+    width: 300px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+#checkbookContent {
+  margin-top: 5px;
+  .checkbookContent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    .checkbookItem {
+      width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.slidingMenu {
+  background: $darkGreen;
+  color: #fff;
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  min-width: 250px;
+  z-index: 9999;
+  display: none;
+}
+
+.menuShow {
+  display: block;
+}
+
+#menuHeader {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.checkbooks {
+  padding: 10px 0 10px 10px;
+}
+
+.checkbooks:hover {
+  background-color: $lightGreen;
+  cursor: pointer;
+}
+
+
+.x {
+  position: absolute;
+  right: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.x:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
