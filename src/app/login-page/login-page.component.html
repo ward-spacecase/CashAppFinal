@@ -1,6 +1,6 @@
 <div class="container">
   <div class="logo">
-    <a href="#/homePage"><img src="../../assets/cashRoyaleLogo.png"></a>
+    <a [routerLink]="['../homePage']"><img src="../../assets/cashRoyaleLogo.png"></a>
   </div>
   <div class="login">
     <div class="signinCaption">
@@ -15,14 +15,14 @@
         <div class="form-group">
           Password <input type="password" class="form-control" name="password">
         </div>
-        <a href="#signup" class="myButton" id="linkSignIn">Sign In</a>
+        <a [routerLink]="['../dashboardPage']" class="myButton" id="linkSignIn">Sign In</a>
       </form>
     </div>
     <div class="forgotPassword">
-      <a href="#" id="forgotPassword">Forget your password? Click Here.</a>
+      <a [routerLink]="['../loginPage']" id="forgotPassword">Forget your password? Click Here.</a>
     </div>
     <div class="getAccount">
-      <a href="#/signup" id="forgotPassword">Don't have an account? Get one now.</a>
+      <a [routerLink]="['../loginPage']">Don't have an account? Get one now.</a>
     </div>
   </div>
 </div>

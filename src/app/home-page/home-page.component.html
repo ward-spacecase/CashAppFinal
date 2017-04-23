@@ -57,7 +57,7 @@
               <div class="form-group">
                 Password <input type="password" minlength="8" required name="password" [(ngModel)]="user.password">
               </div>
-              <button type="button" (click)="registerUser()" [disabled]="!registerForm.form.valid" class="myButton" id="linkSignIn">Sign Up</button>
+              <button type="button" [routerLink]="['../dashboardPage']" class="myButton" id="linkSignIn">Sign Up</button>
             </form>
           </div>
         </div>
